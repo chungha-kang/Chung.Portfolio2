@@ -18,9 +18,14 @@
 			<div class="search-bar">
 				<input class="" placeholder="물품이나 동네를 검색해보세요.">
 			</div>
-			<button class="btn-chat">채팅하기</button>
-			<button class="btn-loging">로그인</button>
-			<!-- 
+			<c:if test="${empty sessionScope.loginData}">
+				<button class="btn-chat" onclick="location.href='./login/join.jsp'">회원가입</button>
+				<button class="btn-loging" onclick="location.href='./login/join.jsp'">로그인</button>
+			</c:if>
+			<c:if test="${not empty sessionScope.loginData}">
+				<button class="btn-chat">채팅하기</button>
+				<button class="btn-loging">로그아웃</button>
+			</c:if>
 			<ul id="nav-login">
 				<c:if test="${empty sessionScope.loginData}">
 					<li><a href="/join">회원가입</a></li>
@@ -31,6 +36,5 @@
 					<li><a href="/logout">로그아웃</a></li>
 				</c:if>
 			</ul>
-			 -->
 		</div>
 	</div>
