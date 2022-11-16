@@ -1,4 +1,4 @@
-package com.KHdaangn.web;
+package com.KHdaangn.web.login.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class HomeController {
+public class LoginController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("inddex", locale);
 		
@@ -25,7 +25,7 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "index";
+		return "login";
 	}
 	
 }
