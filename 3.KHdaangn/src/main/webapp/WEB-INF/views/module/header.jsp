@@ -18,13 +18,15 @@
 			<div class="search-bar">
 				<input class="" placeholder="물품이나 동네를 검색해보세요.">
 			</div>
-			<c:if test="${empty sessionScope.loginData}">
-				<button class="btn-chat" onclick="location.href='/KHdaangn/join'">회원가입</button>
-				<button class="btn-loging" onclick="location.href='/KHdaangn/login'">로그인</button>
-			</c:if>
-			<c:if test="${not empty sessionScope.loginData}">
-				<button class="btn-chat">채팅하기</button>
-				<button class="btn-loging">로그아웃</button>
-			</c:if>
+			<div class="nav-btn">
+				<c:if test="${empty sessionScope.loginData}">
+					<button class="btn-chat" onclick="location.href='/KHdaangn/join'">회원가입</button>
+					<button class="btn-loging" onclick="location.href='/KHdaangn/login'">로그인</button>
+				</c:if>
+				<c:if test="${not empty sessionScope.loginData}">
+					<button class="btn-chat">채팅하기</button>
+					<button class="btn-loging">로그아웃</button>
+				</c:if>
+			</div>
 		</div>
 	</div>
