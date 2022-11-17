@@ -26,7 +26,7 @@
 		<div class="posts">
 			<a href="https://chungha-kang.github.io/Chung.Portfolio/3.KHdaangn/realty-posts" class="">
 				<article>
-					<div class="posts-img"><img alt="" src="img/realty-post-img.jpg"></div>
+					<div class="posts-img"><img alt="" src="resources/img/realty-post-img.jpg"></div>
 					<div class="posts-content">
 						<div class="posts-title">투룸이상 300만원/1만원 - 인천광역시 남동구</div>
 						<div class="posts-address">만수동</div>
@@ -38,7 +38,7 @@
 		<div class="posts">
 			<a href="https://chungha-kang.github.io/Chung.Portfolio/3.KHdaangn/realty-posts" class="">
 				<article>
-					<div class="posts-img"><img alt="" src="img/realty-post-img.jpg"></div>
+					<div class="posts-img"><img alt="" src="resources/img/realty-post-img.jpg"></div>
 					<div class="posts-content">
 						<div class="posts-title">아파트 1억 9,100만원 - 전라남도 목포시</div>
 						<div class="posts-address">석현동</div>

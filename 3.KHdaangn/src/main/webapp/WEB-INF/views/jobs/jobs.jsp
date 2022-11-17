@@ -26,7 +26,7 @@
 		<div class="posts">
 			<a href="https://chungha-kang.github.io/Chung.Portfolio/3.KHdaangn/jobs-posts/" class="">
 				<article>
-					<div class="posts-img"><img alt="" src="img/job-post-img.jpg"></div>
+					<div class="posts-img"><img alt="" src="resources/img/job-post-img.jpg"></div>
 					<div class="posts-content">
 						<div class="posts-title">전화업무(아웃바운드) 10시-4시까지 구합니다</div>
 						<div class="posts-id">콜센터</div>
@@ -39,7 +39,7 @@
 		<div class="posts">
 			<a href="https://chungha-kang.github.io/Chung.Portfolio/3.KHdaangn/jobvs-posts/" class="">
 				<article>
-					<div class="posts-img"><img alt="" src="img/job-post-img.jpg"></div>
+					<div class="posts-img"><img alt="" src="resources/img/job-post-img.jpg"></div>
 					<div class="posts-content">
 						<div class="posts-title">전화업무(아웃바운드) 10시-4시까지 구합니다</div>
 						<div class="posts-id">콜센터</div>
