@@ -16,6 +16,7 @@ public class JobsController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(JobsController.class);
 	
+	// 인기 당근알바 조회 페이지
 	@RequestMapping(value = "/jobs", method = RequestMethod.GET)
 	public String jobs(Locale locale, Model model) {
 		logger.info("jobs", locale);
@@ -28,4 +29,16 @@ public class JobsController {
 		return "jobs/jobs";
 	}
 	
+	// 알바 게시물 페이지
+	@RequestMapping(value = "/job-posts", method = RequestMethod.GET)
+	public String jobPosts(Locale locale, Model model) {
+		logger.info("job-posts", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		String formattedDate = dateFormat.format(date);
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "jobs/job-posts";
+	}
 }

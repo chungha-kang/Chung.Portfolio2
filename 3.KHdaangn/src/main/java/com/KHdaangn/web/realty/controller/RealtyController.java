@@ -16,6 +16,7 @@ public class RealtyController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(RealtyController.class);
 	
+	// 인기 부동산 직거래 게시물 조회 페이지 
 	@RequestMapping(value = "/realty", method = RequestMethod.GET)
 	public String realty(Locale locale, Model model) {
 		logger.info("realty", locale);
@@ -26,6 +27,19 @@ public class RealtyController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "realty/realty";
+	}
+	
+	// 부동산 게시물 페이지
+	@RequestMapping(value = "/realty-posts", method = RequestMethod.GET)
+	public String realtyPosts(Locale locale, Model model) {
+		logger.info("realty-posts", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		String formattedDate = dateFormat.format(date);
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "realty/realty-posts";
 	}
 	
 }
