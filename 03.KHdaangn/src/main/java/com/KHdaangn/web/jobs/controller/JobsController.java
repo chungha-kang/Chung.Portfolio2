@@ -29,9 +29,9 @@ public class JobsController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		// Test2
-		List<String> jobsDatas = Arrays.asList("uuidName", "imgObj", "title", "id", "address", "amount");
-		model.addAttribute("jobsList", jobsDatas); 
-		System.out.println(jobsDatas);
+//		List<String> jobsDatas = Arrays.asList("uuidName", "imgObj", "title", "address", "amount");
+//		model.addAttribute("jobsList", jobsDatas); 
+//		System.out.println(jobsDatas);
 		// Test2 End
 		
 		return "jobs/jobs";
@@ -49,4 +49,18 @@ public class JobsController {
 		
 		return "jobs/job-posts";
 	}
+	
+	// 알바 게시물 추가 페이지
+	@RequestMapping(value = "/jobs/add", method = RequestMethod.GET)
+	public String jobAdd(Locale locale, Model model) {
+		logger.info("jobAdd", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		String formattedDate = dateFormat.format(date);
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "jobs/add";
+	}
+	
 }

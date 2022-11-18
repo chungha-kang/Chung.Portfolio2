@@ -7,6 +7,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>우리동네에서 찾는 당근알바</title>
+	<title><c:out value="${jobsList.title}"/></title>
 	<%@ include file="../module/head.jsp" %>
 </head>
 <body>

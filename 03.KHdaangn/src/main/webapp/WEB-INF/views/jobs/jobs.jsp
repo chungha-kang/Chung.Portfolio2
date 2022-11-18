@@ -23,17 +23,18 @@
 		</div>
 		
 		<div class="post-wrap">
-			<c:url var="jobPostsUrl" value="/KHdaangn/job-posts" />
-			<form action="${jobPostsUrl}" method="get">
 			<h2 class="">인기 당근알바</h2>
 			<c:if test="${empty sessionScope.loginData}">
 			<!-- 로그인 구현 후 not empty 로 변경 하시오. -->
 			<%--c:if test="${not empty sessionScope.loginData}" --%>
 				<div class="post-btn">
-					<c:url var="jobAddUrl" value="${jobUrl}/add"/>
+					<c:url var="jobAddUrl" value="jobs/add" />
 					<button class="" onclick="location.href='${jobAddUrl}'">글쓰기</button>
 				</div>
 			</c:if>
+			
+			<c:url var="jobPostsUrl" value="/job-posts" />
+			<form action="${jobPostsUrl}" method="get">
 			<div class="post">
 					<div class="post-click" onclick="location.href='${jobPostsUrl}'">
 						<div class="post-img"><img src="resources/img/job-post-img.jpg"></div>
