@@ -1,7 +1,9 @@
 package com.KHdaangn.web.jobs.controller;
 
 import java.text.DateFormat;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 import org.slf4j.Logger;
@@ -25,6 +27,12 @@ public class JobsController {
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		String formattedDate = dateFormat.format(date);
 		model.addAttribute("serverTime", formattedDate );
+		
+		// Test2
+		List<String> jobsDatas = Arrays.asList("uuidName", "imgObj", "title", "id", "address", "amount");
+		model.addAttribute("jobsList", jobsDatas); 
+		System.out.println(jobsDatas);
+		// Test2 End
 		
 		return "jobs/jobs";
 	}

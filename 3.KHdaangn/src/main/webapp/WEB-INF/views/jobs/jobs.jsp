@@ -31,11 +31,11 @@
 			<%--c:if test="${not empty sessionScope.loginData}" --%>
 				<div class="post-btn">
 					<c:url var="jobAddUrl" value="${jobUrl}/add"/>
-					<button class="" onclick="location.href='${realtyAddUrl}'">글쓰기</button>
+					<button class="" onclick="location.href='${jobAddUrl}'">글쓰기</button>
 				</div>
 			</c:if>
 			<div class="post">
-					<div class="post-click" onclick="location.href='${job-postsUrl}'">
+					<div class="post-click" onclick="location.href='${jobPostsUrl}'">
 						<div class="post-img"><img src="resources/img/job-post-img.jpg"></div>
 						<div class="post-content">
 							<div class="post-title">전화업무(아웃바운드) 10시-4시까지 구합니다</div>
@@ -50,17 +50,16 @@
 		
 		<div class="post-wrap">
 			<div class="post">
-				<c:url value="/KHdaangn/job-posts" var="job-postsUrl" />
-				<form action="${job-postsUrl}" method="get">
-					<c:url var="job-postsUrl" value="${job-postsUrl}/" />
+				<c:url var="jobPostsUrl" value="/job-posts" />
+				<form action="${jobPostsUrl}" method="get">
 					<!-- Post (클릭되는 부분) -->
-					<div class="post-click" onclick="location.href='${job-postsUrl}/${job-postsList.id}'">
-						<img class="post-img" src="${pageContext.request.contextPath}${job-postsList.imgObj.url}/${job-postsList.imgObj.uuidName}">
+					<div class="post-click" onclick="location.href='${jobPostsUrl}/${jobsList.id}'">
+						<img class="post-img" src="${pageContext.request.contextPath}${jobsList.imgObj.url}/${jobPostsList.imgObj.uuidName}">
 						<div class="post-content">
-							<div class="post-title"><c:out value="${job-postsList.title}"/></div>
-							<div class="post-id"><c:out value="${job-postsList.id}"/></div>
-							<div class="post-address"><c:out value="${job-postsList.address}"/></div>
-							<div class="post-amount"><c:out value="${job-postsList.amount}"/></div>
+							<div class="post-title"><c:out value="${jobsList.title}"/></div>
+							<div class="post-id"><c:out value="${jobsList.id}"/></div>
+							<div class="post-address"><c:out value="${jobsList.address}"/></div>
+							<div class="post-amount"><c:out value="${jobsList.amount}"/></div>
 						</div>
 					</div>
 					<!-- //Post -->
