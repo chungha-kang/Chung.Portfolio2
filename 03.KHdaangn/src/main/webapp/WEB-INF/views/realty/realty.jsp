@@ -17,8 +17,6 @@
 	<!-- Main -->
 	<div class="main-wrap">
 		<div class="post-wrap">
-			<c:url var="realtyPostsUrl"  value="/realty-posts" />
-			<form action="${realtyPostsUrl}" method="get">
 			<h2 class="">인기 부동산 직거래 게시물</h2>
 			<c:if test="${empty sessionScope.loginData}">
 			<!-- 로그인 구현 후 not empty 로 변경 하시오. -->
@@ -28,17 +26,28 @@
 					<button class="" onclick="location.href='${realtyAddUrl}'">글쓰기</button>
 				</div>
 			</c:if>
+			
+			<c:url var="realtyPostsUrl"  value="/realty-posts" />
+			<form action="${realtyPostsUrl}" method="get">
 			<div class="post">
-				<a href="${realtyPostsUrl}" class="">
-					<article>
-						<div class="post-img"><img alt="" src="resources/img/realty-post-img.jpg"></div>
-						<div class="post-content">
-							<div class="post-title">투룸이상 300만원/1만원 - 인천광역시 남동구</div>
-							<div class="post-address">만수동</div>
-							<div class="post-amount">단기 300 / 1</div>
-						</div>
-					</article>
-				</a>
+				<div class="post-click" onclick="location.href='${realtyPostsUrl}'">
+					<img src="resources/img/realty-post-img.jpg">
+					<div class="post-content">
+						<div class="post-title">투룸이상 300만원/1만원 - 인천광역시 남동구</div>
+						<div class="post-address">만수동</div>
+						<div class="post-amount">단기 300 / 1</div>
+					</div>
+				</div>
+			</div>
+			<div class="post">
+				<div class="post-click" onclick="location.href='${realtyPostsUrl}/${realtyList.id}'">
+					<img src="${pageContext.request.contextPath}${realtyList.imgObj.url}/${realtyPostList.imgObj.uuidName}">
+					<div class="post-content">
+						<div class="post-title"><c:out value="${realtyList.title}"/></div>
+						<div class="post-address"><c:out value="${realtyList.address}"/></div>
+						<div class="post-amount"><c:out value="${realtyList.amount}"/></div>
+					</div>
+				</div>
 			</div>
 			<div class="post">
 				<a href="/KHdaangn/realty-posts" class="">
