@@ -33,9 +33,29 @@
 				</div>
 			</c:if>
 			
+			<c:forEach items="${jobsList}" var="jobsList">
+				<div class="post">
+					<c:url var="jobPostsUrl" value="/jobPosts" />
+					<form action="${jobPostsUrl}" method="get">
+						<!-- Post (클릭되는 부분) -->
+						<div class="post-click" onclick="location.href='${jobPostsUrl}/${jobsList.title}'">
+							<img class="post-img" src="${pageContext.request.contextPath}${jobsList.imgObj.url}/${jobPostsList.imgObj.uuidName}">
+							<div class="post-content">
+								<div class="post-title"><c:out value="${jobsList.title}"/></div>
+								<div class="post-id"><c:out value="${jobsList.id}"/></div>
+								<div class="post-address"><c:out value="${jobsList.address}"/></div>
+								<div class="post-amount"><c:out value="${jobsList.amount}"/></div>
+							</div>
+						</div>
+						<!-- //Post -->
+					</form>
+				</div>
+			</c:forEach>
+			
+			<!-- forEach jobsList 구현후 삭제 -->
 			<c:url var="jobPostsUrl" value="/job-posts" />
 			<form action="${jobPostsUrl}" method="get">
-			<div class="post">
+				<div class="post">
 					<div class="post-click" onclick="location.href='${jobPostsUrl}'">
 						<div class="post-img"><img src="resources/img/job-post-img.jpg"></div>
 						<div class="post-content">
@@ -46,61 +66,21 @@
 						</div>
 					</div>
 				</div>
-			</form>
-		</div>
-		
-		<div class="post-wrap">
-			<div class="post">
-				<c:url var="jobPostsUrl" value="/job-posts" />
-				<form action="${jobPostsUrl}" method="get">
-					<!-- Post (클릭되는 부분) -->
-					<div class="post-click" onclick="location.href='${jobPostsUrl}/${jobsList.id}'">
-						<img class="post-img" src="${pageContext.request.contextPath}${jobsList.imgObj.url}/${jobPostsList.imgObj.uuidName}">
-						<div class="post-content">
-							<div class="post-title"><c:out value="${jobsList.title}"/></div>
-							<div class="post-id"><c:out value="${jobsList.id}"/></div>
-							<div class="post-address"><c:out value="${jobsList.address}"/></div>
-							<div class="post-amount"><c:out value="${jobsList.amount}"/></div>
+				<div class="posts">
+				<a href="/KHdaangn/job-posts" class="">
+					<article>
+						<div class="posts-img"><img alt="" src="resources/img/job-post-img.jpg"></div>
+						<div class="posts-content">
+							<div class="posts-title">전화업무(아웃바운드) 10시-4시까지 구합니다</div>
+							<div class="posts-id">콜센터</div>
+							<div class="posts-address">경기도 부천시 상동</div>
+							<div class="posts-amount">월급 1,500,000</div>
 						</div>
-					</div>
-					<!-- //Post -->
-				</form>
-			</div>
-		</div>
-		 
-		<%-- 
-		<c:forEach items="${job-postsList}" var="job-postsList">
-			<div class="post-wrap">
-				<div class="post">
-					<c:url var="job-postsUrl" value="${job-postsUrl}/" />
-					<!-- Post (클릭되는 부분) -->
-					<div class="post-click" onclick="location.href='${job-postsUrl}/${job-postsList.id}'">
-						<img class="post-img" src="${pageContext.request.contextPath}${job-postsList.imgObj.url}/${job-postsList.imgObj.uuidName}">
-						<div class="post-content">
-							<div class="post-title"><c:out value="${job-postsList.title}"/></div>
-							<div class="post-id"><c:out value="${job-postsList.id}"/></div>
-							<div class="post-address"><c:out value="${job-postsList.address}"/></div>
-							<div class="post-amount"><c:out value="${job-postsList.amount}"/></div>
-						</div>
-					</div>
-					<!-- //Post -->
+					</article>
+					</a>
 				</div>
-			</div>
-		</c:forEach>
-		 --%>
-					
-		<div class="posts">
-			<a href="/KHdaangn/job-posts" class="">
-				<article>
-					<div class="posts-img"><img alt="" src="resources/img/job-post-img.jpg"></div>
-					<div class="posts-content">
-						<div class="posts-title">전화업무(아웃바운드) 10시-4시까지 구합니다</div>
-						<div class="posts-id">콜센터</div>
-						<div class="posts-address">경기도 부천시 상동</div>
-						<div class="posts-amount">월급 1,500,000</div>
-					</div>
-				</article>
-			</a>
+			</form>
+			<!-- //forEach jobsList 구현후 삭제 -->
 		</div>
 	</div>
 	<!-- //Main -->

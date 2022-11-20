@@ -1,6 +1,7 @@
 package com.KHdaangn.web.jobs.controller;
 
 import java.text.DateFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -12,6 +13,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.KHdaangn.web.jobs.model.JobsDTO;
 
 @Controller
 public class JobsController {
@@ -27,6 +30,14 @@ public class JobsController {
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		String formattedDate = dateFormat.format(date);
 		model.addAttribute("serverTime", formattedDate );
+		
+		// Test1
+//		List<JobsDTO> jobsList = new ArrayList<>();
+//		jobsList.add(new JobsDTO("전화업무(아웃바운드) 10시-4시까지 구합니다", "콜센터", "경기도 부천시 상동", "월급 1,500,000"));
+//		
+//		model.addAttribute("jobsList", jobsList);
+//		System.out.println(jobsList);
+		// Test1 End
 		
 		// Test2
 //		List<String> jobsDatas = Arrays.asList("uuidName", "imgObj", "title", "address", "amount");
