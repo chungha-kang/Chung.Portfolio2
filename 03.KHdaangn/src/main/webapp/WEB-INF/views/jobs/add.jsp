@@ -157,6 +157,8 @@
 			<input placeholder="예) 업무 예시, 근무 여건, 지원자가 갖추어야 할 능력, 우대 사항 등">
 		</div>
 		<button>작성 완료</button>
+		</div>
+	</div>
 	<!-- //Main -->
 	
 	<!-- Footer -->
