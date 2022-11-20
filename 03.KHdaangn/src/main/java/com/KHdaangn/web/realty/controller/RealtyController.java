@@ -42,4 +42,17 @@ public class RealtyController {
 		return "realty/realty-posts";
 	}
 	
+	// 부동산 게시물 추가 페이지
+		@RequestMapping(value = "/realty/add", method = RequestMethod.GET)
+		public String realtyAdd(Locale locale, Model model) {
+			logger.info("realtyAdd", locale);
+			
+			Date date = new Date();
+			DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+			String formattedDate = dateFormat.format(date);
+			model.addAttribute("serverTime", formattedDate );
+			
+			return "realty/add";
+		}
+	
 }

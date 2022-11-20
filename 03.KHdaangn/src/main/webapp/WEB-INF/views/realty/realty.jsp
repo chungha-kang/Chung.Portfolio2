@@ -22,11 +22,30 @@
 			<!-- 로그인 구현 후 not empty 로 변경 하시오. -->
 			<%--c:if test="${not empty sessionScope.loginData}" --%>
 				<div class="post-btn">
-					<c:url var="realtyAddUrl" value="${realtyUrl}/add"/>
+					<c:url var="realtyAddUrl" value="realty/add"/>
 					<button class="" onclick="location.href='${realtyAddUrl}'">글쓰기</button>
 				</div>
 			</c:if>
 			
+			<c:forEach items="${realtyList}" var="realtyList">
+				<div class="post">
+					<c:url var="realtyPostsUrl" value="/realty-Posts" />
+					<form action="${realtyPostsUrl}" method="get">
+						<!-- Post (클릭되는 부분) -->
+						<div class="post-click" onclick="location.href='${realtyPostsUrl}/${realtyList.title}'">
+							<img class="post-img" src="${pageContext.request.contextPath}${realtyList.imgObj.url}/${realtyPostsList.imgObj.uuidName}">
+							<div class="post-content">
+								<div class="post-title"><c:out value="${realtyList.title}"/></div>
+								<div class="post-address"><c:out value="${realtyList.address}"/></div>
+								<div class="post-amount"><c:out value="${realtyList.amount}"/></div>
+							</div>
+						</div>
+						<!-- //Post -->
+					</form>
+				</div>
+			</c:forEach>
+			
+			<!-- forEach realtyList 구현후 삭제 -->
 			<c:url var="realtyPostsUrl"  value="/realty-posts" />
 			<form action="${realtyPostsUrl}" method="get">
 			<div class="post">
@@ -62,6 +81,7 @@
 				</a>
 			</div>
 			</form>
+			<!-- //forEach realtyList 구현후 삭제 -->
 		</div>
 	</div>
 	<!-- //Main -->
