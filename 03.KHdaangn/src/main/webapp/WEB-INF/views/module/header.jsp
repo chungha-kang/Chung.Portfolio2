@@ -16,6 +16,7 @@
 				</ul>
 			</div>
 			<div class="search-bar">
+				<!-- Enter key event 구현예정(JS) -->
 				<input class="" placeholder="물품이나 동네를 검색해보세요.">
 			</div>
 			<div class="nav-btn">

@@ -17,6 +17,7 @@
 	<!-- Main -->
 	<div class="main-wrap">
 		<div class="main-title"><h1>중고거래 인기매물</h1></div>
+		<!-- 다중 셀렉트 박스 구현예정 (JS) -->
 		<div class="selector1">
 			<select>
 				<option value="">지역을 선택하세요</option>
@@ -42,19 +43,19 @@
 			</select>
 		</div>
 		<div class="article-wrap">
-			<div class="articel-posts">
+			<div class="article-posts">
 				<c:forEach items="${articlesList}" var="articlesList">
-				<!-- 게시물 갯수 제한 구현해야함 -->
 					<div class="post">
-						<form action="${jobPostsUrl}" method="get">
+						<form action="${articlePostsUrl}" method="get">
 							<!-- Post (클릭되는 부분) -->
-							<div class="post-click" onclick="location.href='${jobPostsUrl}/${jobsList.title}'">
-								<img class="post-img" src="${pageContext.request.contextPath}${jobsList.imgObj.url}/${jobPostsList.imgObj.uuidName}">
-								<div class="post-content">
-									<div class="post-title"><c:out value="${jobsList.title}"/></div>
-									<div class="post-id"><c:out value="${jobsList.id}"/></div>
-									<div class="post-address"><c:out value="${jobsList.address}"/></div>
-									<div class="post-amount"><c:out value="${jobsList.amount}"/></div>
+							<div class="article-click" onclick="location.href='${articlePostsUrl}/${articlesList.title}'">
+								<img class="article-img" src="${pageContext.request.contextPath}${articlesList.imgObj.url}/${articlePostsList.imgObj.uuidName}">
+								<div class="atticle-content">
+									<div class="article-title"><c:out value="${articlesList.title}"/></div>
+									<div class="article-amount"><c:out value="${articlesList.amount}"/></div>
+									<div class="article-address"><c:out value="${articlesList.address}"/></div>
+									<div class="article-like"><c:out value="${articlesList.like}"/></div>
+									<div class="article-chat"><c:out value="${articlesList.chat}"/></div>
 								</div>
 							</div>
 							<!-- //Post -->
@@ -62,6 +63,8 @@
 					</div>
 				</c:forEach>
 			</div>
+			
+			<!-- forEach jobsList 구현후 삭제 -->
 			<div class="article-posts">
 				<a href="${articles}" class="">
 					<article>
@@ -90,6 +93,7 @@
 					</article>
 				</a>
 			</div>
+			<!-- //forEach jobsList 구현후 삭제 -->
 		</div>
 		<div class="article-bottom">
 			<h2>더 구경하고 싶나요?</h2>
