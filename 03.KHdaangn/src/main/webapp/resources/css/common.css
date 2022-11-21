@@ -12,7 +12,7 @@ body {
 h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, 
 address, table, thead, tbody, tfoot, tr, td, caption {margin: 0; padding: 0;}
 
-
+/* header */
 .nav{display: flex; max-width: 1600px; margin: 10px auto; text-align: center;}
 .nav .nav-logo > a {width: 115px; height: 38px; display: flex; align-items: center;}
 .nav .nav-logo a > img {width: 38px; height: 38px; display: block;}
@@ -23,7 +23,16 @@ address, table, thead, tbody, tfoot, tr, td, caption {margin: 0; padding: 0;}
 .nav .nav-serch-bar {width: 450px;}
 .nav .nav-btn {width: 135px;}
 
+/* footer */
+.footer-wrap {border-top: 1px solid; border-color: #eaebee; max-width: 1600px; text-align: center;}
+.footer-wrap .footer-section {display: flex; margin: 0 auto; padding: 50px 0; justify-content: center;}
+.footer-wrap .footer-section > ul {display: flex; list-style: none; width: 33%; flex-direction: column;}
+.footer-wrap .footer-section > li {}
+.footer-wrap .footer-section .footer-section-left {}
+.footer-wrap .footer-section .footer-section-right {width: 33%;}
+.footer-wrap .footer-info {border-top: 1px solid; border-color: #eaebee; max-width: 1600px;}
 
+/* main */
 .main-wrap {align-items: center;}
 .main-wrap .main-content:first-child {padding-top: 24px; background-color: #FBF7F2;}
 .main-wrap .main-content {padding: 6rem 0;}
@@ -44,3 +53,4 @@ address, table, thead, tbody, tfoot, tr, td, caption {margin: 0; padding: 0;}
 .main-wrap .add-h3 {float:left;}
 .main-wrap .choice-gray {color: gray;}
 .main-wrap .add-gray {color: gray;}
+
