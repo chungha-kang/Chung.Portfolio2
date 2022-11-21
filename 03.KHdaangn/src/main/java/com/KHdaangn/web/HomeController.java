@@ -40,4 +40,16 @@ public class HomeController {
 		return "hot_articles";
 	}
 	
+	@RequestMapping(value = "/search", method = RequestMethod.GET)
+	public String search(Locale locale, Model model) {
+		logger.info("hotArticles", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		String formattedDate = dateFormat.format(date);
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "search";
+	}
+	
 }
