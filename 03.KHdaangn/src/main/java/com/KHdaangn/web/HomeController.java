@@ -42,7 +42,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/search", method = RequestMethod.GET)
 	public String search(Locale locale, Model model) {
-		logger.info("hotArticles", locale);
+		logger.info("search", locale);
 		
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -50,6 +50,30 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "search";
+	}
+	
+	@RequestMapping(value = "/story_articles", method = RequestMethod.GET)
+	public String story_articles(Locale locale, Model model) {
+		logger.info("story_articles", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		String formattedDate = dateFormat.format(date);
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "story_articles";
+	}
+	
+	@RequestMapping(value = "/top_keywords", method = RequestMethod.GET)
+	public String top_keywords(Locale locale, Model model) {
+		logger.info("top_keywords", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		String formattedDate = dateFormat.format(date);
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "top_keywords";
 	}
 	
 }
