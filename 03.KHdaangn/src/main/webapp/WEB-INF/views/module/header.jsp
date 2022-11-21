@@ -6,7 +6,7 @@
 <div class="header-wrap">
 		<div class="nav">
 			<div class="nav-logo">
-				<a href="/KHdaangn"><img src="resources/img/logo.png">KH당근마켓</a>
+				<a href="/KHdaangn"><img src="${pageContext.request.contextPath}/resources/img/logo.png">KH당근마켓</a>
 			</div> 
 			<div class="nav-main">
 				<ul class="nav-item">
