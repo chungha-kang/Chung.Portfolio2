@@ -22,6 +22,6 @@
 <c:url var="search" value="/search" />
 <c:url var="articles" value="/articles" />
 <c:url var="hotArticles" value="/hot_articles" />
-<c:url var="top_keywords" value="/top_keywords" />
+<c:url var="topKeywords" value="/top_keywords" />
 <c:url var="jobAddUrl" value="jobs/add" />
 <c:url var="jobPostsUrl" value="/job-posts" />

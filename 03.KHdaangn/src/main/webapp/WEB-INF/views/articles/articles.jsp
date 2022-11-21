@@ -17,7 +17,7 @@
 	<!-- Main -->
 	<div class="post-wrap">
 		<div class="slide-img">
-			<img alt="" src="${img}/article-img.jpg">
+			<img alt="" src="${img}/article-img.JPG">
 		</div>
 		<div class="id-section">
 			<a href="${user}" class="">
@@ -54,7 +54,7 @@
 			<div class="posts">
 				<a href="${articles}" class="">
 					<article>
-						<div class="article-img"><img alt="" src="${img}/article-img.jpg"></div>
+						<div class="article-img"><img alt="" src="${img}/article-img.JPG"></div>
 						<div class="atticle-content">
 							<div class="article-title">삼성 55인치 tv</div>
 							<div class="article-amount">100,000원</div>
