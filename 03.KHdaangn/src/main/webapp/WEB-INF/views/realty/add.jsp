@@ -17,171 +17,150 @@
 	<!-- Main -->
 	<div class="main-wrap">
 		<div class="post-wrap">
-		<h2 style="font-color: orange;">중개수수료 없는</h2>
-		<h2>부동산 직거래에는<br>개인의 매물만 올려주세요.</h2>
-		
-		<div class="add-type">
-			<h3>매물 종류</h3>
-			<select>
-				<option value="none" selected>매물 종류 선택</option>
-				<option value="oneroom">원룸</option>
-				<option value="villa">빌라(투룸 이상)</option>
-				<option value="apt">아파트</option>
-				<option value="store">상가</option>
-				<option value="others">기타(사무실, 주택, 토지 등)</option>
-			</select>
+			<h2 style="font-color: orange;">중개수수료 없는</h2>
+			<h2>부동산 직거래에는<br>개인의 매물만 올려주세요.</h2>
+			
+			<div class="add-type">
+				<h3>매물 종류</h3>
+				<select>
+					<option value="none" selected>매물 종류 선택</option>
+					<option value="oneroom">원룸</option>
+					<option value="villa">빌라(투룸 이상)</option>
+					<option value="apt">아파트</option>
+					<option value="store">상가</option>
+					<option value="others">기타(사무실, 주택, 토지 등)</option>
+				</select>
+			</div>
+			<!-- option value="none" 일경우 -->
+			<div class="add-notice">
+				<p>이런 매물은 올릴 수 없어요</p>
+				<ul>
+					<li>공인중개사 매물</li>
+					<li>신축 건물 분양 매물</li>
+					<li>원룸텔, 고시원, 모텔, 호텔 매물</li>
+					<li>쉐어하우스, 룸메이트 구하는 매물</li>
+					<li>전화, 카톡 유도 매물(사기 위험)</li>
+				</ul>
+			</div>
+			<!-- //option value="none" 일경우 -->
+			
+			<!-- option value="oneroom" 일 경우 -->
+			<div class="add-video">
+				<h3 class="add-h3">매물 소개 영상</h3><h3 class="choice-gray">(선택)</h3>
+				<p class="add-gray">직접 촬영한 매물 소개 영상을 올려 신뢰도를 높여보세요.</p>
+				<button class="btn-video">매물 소개 영상 올리기</button>
+			</div>
+			<div class="add-photo">
+				<h3>사진</h3>
+				<p class="add-gray">매물의 모든 측면을 파악할 수 있도록 여러 사진을 올려주세요.</p>
+				<button class="btn-video">0/20</button>
+			</div>
+			<div class="add-two-input">
+				<h3 class="add-h3">실평수(전용면적)</h3><h3 class="choice-gray">(선택)</h3>
+				<div class="input-wrap">
+					<div class="input-left">
+						<div class="input-title">실평수</div>
+						<input placeholder="0">평
+					</div>
+					<div class="input-right">
+						<div class="input-title">전용 면적</div>
+						<input placeholder="0">㎡
+					</div>
+				</div>
+			</div>
+			<div class="add-two-checkbox">
+				<h3>원룸 구조</h3>
+				<div class="checkbox-wrap">
+					<div class="checkbox-left"><input type="checkbox">오픈형</div>
+					<div class="checkbox-right"><input type="checkbox">분리형</div>
+				</div>
+			</div>
+			<div class="add-adress-twoline">
+				<h3>매물 주소</h3>
+				<input placeholder="주소">▷
+				<input placeholder="위치 한줄 설명(ex. 강남역 도보 5분)">
+			</div>
+			<div class="add-trade">
+				<h3>선호하는 거래방식</h3>
+				<button class="rounded2">단기</button>
+				<button class="rounded2">월세</button>
+				<button class="rounded2">전세</button>
+				<button class="rounded2">매매</button>
+			</div>
+			<div class="add-two-input">
+				<h3 class="add-h3">층</h3><h3 class="choice-gray">(선택)</h3>
+				<div class="input-wrap">
+					<div class="input-left">
+						<div class="input-title">전체층</div>
+						<input placeholder="0">층
+					</div>
+					<div class="input-right">
+						<div class="input-title">해당층</div>
+						<input placeholder="0">층
+					</div>
+					<div class="checkbox"><input type="checkbox">반지하</div>
+				</div>
+			</div>
+			<div class="add-two-checkbox">
+				<h3 class="add-h3">입주 가능일</h3><h3 class="choice-gray">(선택)</h3>
+				<div class="checkbox-wrap">
+					<div class="checkbox-left"><input type="checkbox">즉시 가능</div>
+					<div class="checkbox-right"><input type="checkbox">날짜 지정</div>
+				</div>
+			</div>
+			<div class="add-three-checkbox">
+				<h3>대출</h3>
+				<div class="checkbox-wrap">
+					<div class="checkbox-left"><input type="checkbox">가능</div>
+					<div class="checkbox-mid"><input type="checkbox">불가능</div>
+					<div class="checkbox-right"><input type="checkbox">확인필요</div>
+				</div>
+			</div>
+			<div class="add-three-checkbox">
+				<h3>반려동물</h3>
+				<div class="checkbox-wrap">
+					<div class="checkbox-left"><input type="checkbox">가능</div>
+					<div class="checkbox-mid"><input type="checkbox">불가능</div>
+					<div class="checkbox-right"><input type="checkbox">확인필요</div>
+				</div>
+			</div>
+			<div class="add-three-checkbox">
+				<h3>주차</h3>
+				<div class="checkbox-wrap">
+					<div class="checkbox-left"><input type="checkbox">가능</div>
+					<div class="checkbox-mid"><input type="checkbox">불가능</div>
+					<div class="checkbox-right"><input type="checkbox">확인필요</div>
+				</div>
+			</div>
+			<div class="add-two-checkbox">
+				<h3>엘리베이터</h3>
+				<div class="checkbox-wrap">
+					<div class="checkbox-left"><input type="checkbox">있음</div>
+					<div class="checkbox-right"><input type="checkbox">없음</div>
+				</div>
+			</div>
+			<div class="add-facility">
+				<h3 class="add-h3">내부 시설</h3><h3 class="choice-gray">(선택)</h3>
+				<div class="checkbox-wrap2">
+					<input type="checkbox">복층
+					<input type="checkbox">옥탑
+					<input type="checkbox">세탁기
+					<input type="checkbox">냉장고
+					<input type="checkbox">에어컨
+					<input type="checkbox">전자렌지
+					<input type="checkbox">가스렌지
+					<input type="checkbox">인덕션
+					<input type="checkbox">침대
+				</div>
+			</div>
+			<div class="add-detail">
+				<h3 class="add-h3">매물 설명</h3><h3 class="choice-gray">(선택)</h3>
+				<input placeholder="이 매물의 특징이 있다면 알려주세요.">
+			</div>
+			<button>글쓰기</button>
 		</div>
-		<div class="add-notice">
-			<p>이런 매물은 올릴 수 없어요</p>
-			<ul>
-				<li>공인중개사 매물</li>
-				<li>신축 건물 분양 매물</li>
-				<li>원룸텔, 고시원, 모텔, 호텔 매물</li>
-				<li>쉐어하우스, 룸메이트 구하는 매물</li>
-				<li>전화, 카톡 유도 매물(사기 위험)</li>
-			</ul>
-		</div>
-		
-		<div class="add-photo">
-			<h3>사진(선택)</h3>
-			<p>일하는 공간이나 일과 관련된 사진을 올려보세요</p>
-		</div>
-		<div class="add-title">
-			<h3>제목</h3>
-			<input placeholder="구인 내용 요약">
-		</div>
-		<div class="add-info">
-			<h3>정보</h3>
-			<select>
-				<option value="hour" selected>시급</option>
-				<option value="day">일급</option>
-				<option value="month">월급</option>
-				<option value="one">건당급</option>
-			</select>
-			<input placeholder="9,160">원
-		</div>
-		<div class="add-week">
-			<h3>일하는 요일</h3>
-			<button class="rounded">월</button>
-			<button class="rounded">화</button>
-			<button class="rounded">수</button>
-			<button class="rounded">목</button>
-			<button class="rounded">금</button>
-			<button class="rounded">토</button>
-			<button class="rounded">일</button>
-		</div>
-		<div class="add-time">
-			<h3>일하는 시간</h3>
-			<select>
-				<option value="00:00">00:00</option>
-				<option value="00:30">00:30</option>
-				<option value="01:00">01:00</option>
-				<option value="01:30">01:30</option>
-				<option value="02:00">02:00</option>
-				<option value="02:30">02:30</option>
-				<option value="03:00">03:00</option>
-				<option value="03:30">03:30</option>
-				<option value="04:00">04:00</option>
-				<option value="04:30">04:30</option>
-				<option value="05:00">05:00</option>
-				<option value="05:30">05:30</option>
-				<option value="06:00">06:00</option>
-				<option value="06:30">06:30</option>
-				<option value="07:00">07:00</option>
-				<option value="07:30">07:30</option>
-				<option value="08:00">08:00</option>
-				<option value="08:30">08:30</option>
-				<option value="09:00" selected>09:00</option>
-				<option value="09:30">09:30</option>
-				<option value="10:00">10:00</option>
-				<option value="10:30">10:30</option>
-				<option value="11:00">11:00</option>
-				<option value="11:30">11:30</option>
-				<option value="12:00">12:00</option>
-				<option value="12:30">12:30</option>
-				<option value="13:00">13:00</option>
-				<option value="13:30">13:30</option>
-				<option value="14:00">14:00</option>
-				<option value="14:30">14:30</option>
-				<option value="15:00">15:00</option>
-				<option value="15:30">15:30</option>
-				<option value="16:00">16:00</option>
-				<option value="16:30">16:30</option>
-				<option value="17:00">17:00</option>
-				<option value="17:30">17:30</option>
-				<option value="18:00">18:00</option>
-				<option value="18:30">18:30</option>
-				<option value="19:00">19:00</option>
-				<option value="19:30">19:30</option>
-				<option value="20:00">20:00</option>
-				<option value="20:30">20:30</option>
-				<option value="21:00">21:00</option>
-				<option value="21:30">21:30</option>
-				<option value="22:00">22:00</option>
-				<option value="22:30">22:30</option>
-				<option value="23:00">23:00</option>
-				<option value="23:30">23:30</option>
-			</select>▽
-			<p>~</p>
-			<select>
-				<option value="00:00">00:00</option>
-				<option value="00:30">00:30</option>
-				<option value="01:00">01:00</option>
-				<option value="01:30">01:30</option>
-				<option value="02:00">02:00</option>
-				<option value="02:30">02:30</option>
-				<option value="03:00">03:00</option>
-				<option value="03:30">03:30</option>
-				<option value="04:00">04:00</option>
-				<option value="04:30">04:30</option>
-				<option value="05:00">05:00</option>
-				<option value="05:30">05:30</option>
-				<option value="06:00">06:00</option>
-				<option value="06:30">06:30</option>
-				<option value="07:00">07:00</option>
-				<option value="07:30">07:30</option>
-				<option value="08:00">08:00</option>
-				<option value="08:30">08:30</option>
-				<option value="09:00">09:00</option>
-				<option value="09:30">09:30</option>
-				<option value="10:00">10:00</option>
-				<option value="10:30">10:30</option>
-				<option value="11:00">11:00</option>
-				<option value="11:30">11:30</option>
-				<option value="12:00">12:00</option>
-				<option value="12:30">12:30</option>
-				<option value="13:00">13:00</option>
-				<option value="13:30">13:30</option>
-				<option value="14:00">14:00</option>
-				<option value="14:30">14:30</option>
-				<option value="15:00">15:00</option>
-				<option value="15:30">15:30</option>
-				<option value="16:00">16:00</option>
-				<option value="16:30">16:30</option>
-				<option value="17:00">17:00</option>
-				<option value="17:30">17:30</option>
-				<option value="18:00" selected>18:00</option>
-				<option value="18:30">18:30</option>
-				<option value="19:00">19:00</option>
-				<option value="19:30">19:30</option>
-				<option value="20:00">20:00</option>
-				<option value="20:30">20:30</option>
-				<option value="21:00">21:00</option>
-				<option value="21:30">21:30</option>
-				<option value="22:00">22:00</option>
-				<option value="22:30">22:30</option>
-				<option value="23:00">23:00</option>
-				<option value="23:30">23:30</option>
-			</select>▽
-			<input type="checkbox"> 협의가능
-		</div>
-		<div class="add-detail">
-			<h3>상세정보</h3>
-			<input placeholder="예) 업무 예시, 근무 여건, 지원자가 갖추어야 할 능력, 우대 사항 등">
-		</div>
-		<button>작성 완료</button>
-		</div>
-		</div>
+	</div>
+	<!-- //option value="oneroom" 일 경우 -->
 	<!-- //Main -->
 	
 	<!-- Footer -->
