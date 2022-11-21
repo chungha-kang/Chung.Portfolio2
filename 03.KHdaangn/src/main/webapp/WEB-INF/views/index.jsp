@@ -30,10 +30,10 @@
 		</div>
 		<div>
 			중고거래 인기매물<br>
-			<a href="/KHdaangn/hot_articles">인기매물 더 보기</a>
+			<a href="${hot_articels}">인기매물 더 보기</a>
 		</div>
 		<div>
-			<a href="/KHdaangn/top_keywords">중고거래 인기검색어</a>
+			<a href="${top_keywords}">중고거래 인기검색어</a>
 		</div>
 	</div>	
 	<!-- //Main -->

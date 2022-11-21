@@ -42,10 +42,30 @@
 			</select>
 		</div>
 		<div class="article-wrap">
+			<div class="articel-posts">
+				<c:forEach items="${articlesList}" var="articlesList">
+				<!-- 게시물 갯수 제한 구현해야함 -->
+					<div class="post">
+						<form action="${jobPostsUrl}" method="get">
+							<!-- Post (클릭되는 부분) -->
+							<div class="post-click" onclick="location.href='${jobPostsUrl}/${jobsList.title}'">
+								<img class="post-img" src="${pageContext.request.contextPath}${jobsList.imgObj.url}/${jobPostsList.imgObj.uuidName}">
+								<div class="post-content">
+									<div class="post-title"><c:out value="${jobsList.title}"/></div>
+									<div class="post-id"><c:out value="${jobsList.id}"/></div>
+									<div class="post-address"><c:out value="${jobsList.address}"/></div>
+									<div class="post-amount"><c:out value="${jobsList.amount}"/></div>
+								</div>
+							</div>
+							<!-- //Post -->
+						</form>
+					</div>
+				</c:forEach>
+			</div>
 			<div class="article-posts">
-				<a href="https://chungha-kang.github.io/Chung.Portfolio/3.KHdaangn/articles/" class="">
+				<a href="${articles}" class="">
 					<article>
-						<div class="article-img"><img alt="" src="img/article-img.jpg"></div>
+						<div class="article-img"><img alt="" src="${img}/article-img.JPG"></div>
 						<div class="atticle-content">
 							<div class="article-title">삼성 55인치 tv</div>
 							<div class="article-amount">100,000원</div>
@@ -57,9 +77,9 @@
 				</a>
 			</div>
 			<div class="article-posts">
-				<a href="https://chungha-kang.github.io/Chung.Portfolio/3.KHdaangn/articles/" class="">
+				<a href="${articles}" class="">
 					<article>
-						<div class="article-img"><img alt="" src="img/article-img.jpg"></div>
+						<div class="article-img"><img alt="" src="${img}/article-img.JPG"></div>
 						<div class="atticle-content">
 							<div class="article-title">삼성 55인치 tv</div>
 							<div class="article-amount">100,000원</div>

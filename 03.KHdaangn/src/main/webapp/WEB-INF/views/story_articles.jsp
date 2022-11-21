@@ -17,10 +17,10 @@
 	<!-- Main -->
 	<div class="post-wrap">
 		<div class="slide-img">
-			<img alt="" src="img/article-img.jpg">
+			<img alt="" src="${img}/article-img.jpg">
 		</div>
 		<div class="id-section">
-			<a href="https://chungha-kang.github.io/Chung.Portfolio/3.KHdaangn/user" class="">
+			<a href="${user}" class="">
 				<div class="id-section-left">
 					<div class="id-img"><img src=""></div>
 					<div class="id-name">당근당근</div>
@@ -72,11 +72,11 @@
 		<hr>
 		<div class="recommand-articles">
 			<h3>KH당근마켓 인기중고</h3>
-			<div class="hot_articles-link"><a href="https://chungha-kang.github.io/Chung.Portfolio/3.KHdaangn/hot_articles">더 구경하기</a></div>
+			<div class="hot_articles-link"><a href="${hot_articles}">더 구경하기</a></div>
 			<div class="posts">
-				<a href="https://chungha-kang.github.io/Chung.Portfolio/3.KHdaangn/articles" class="">
+				<a href="${articels}" class="">
 					<article>
-						<div class="article-img"><img alt="" src="img/article-img.jpg"></div>
+						<div class="article-img"><img alt="" src="${img}/article-img.jpg"></div>
 						<div class="atticle-content">
 							<div class="article-title">삼성 55인치 tv</div>
 							<div class="article-amount">100,000원</div>

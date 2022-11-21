@@ -20,9 +20,9 @@
 			<div class="result-box">
 				<h3>중고거래 인기매물</h3>
 				<div class="result-post">
-					<a href="https://chungha-kang.github.io/Chung.Portfolio/3.KHdaangn/articles" class="">
+					<a href="${articels}" class="">
 						<article>
-							<div class="result-img"><img alt="" src="img/article-img.jpg"></div>
+							<div class="result-img"><img alt="" src="${img}/article-img.jpg"></div>
 							<div class="result-content">
 								<div class="result-title">어린이자전거 아동자전거 네발자전거</div>
 								<div class="result-address">울산 중구 남외동</div>
@@ -33,9 +33,9 @@
 					</a>
 				</div>
 				<div class="result-post">
-					<a href="https://chungha-kang.github.io/Chung.Portfolio/3.KHdaangn/articles" class="">
+					<a href="${articles}" class="">
 						<article>
-							<div class="result-img"><img alt="" src="img/article-img.jpg"></div>
+							<div class="result-img"><img alt="" src="${img}/article-img.jpg"></div>
 							<div class="result-content">
 								<div class="result-title">어린이자전거 아동자전거 네발자전거</div>
 								<div class="result-address">울산 중구 남외동</div>
@@ -46,9 +46,9 @@
 					</a>
 				</div>
 				<div class="result-post">
-					<a href="https://chungha-kang.github.io/Chung.Portfolio/3.KHdaangn/articles" class="">
+					<a href="${articles}" class="">
 						<article>
-							<div class="result-img"><img alt="" src="img/article-img.jpg"></div>
+							<div class="result-img"><img alt="" src="${img}/article-img.jpg"></div>
 							<div class="result-content">
 								<div class="result-title">어린이자전거 아동자전거 네발자전거</div>
 								<div class="result-address">울산 중구 남외동</div>
