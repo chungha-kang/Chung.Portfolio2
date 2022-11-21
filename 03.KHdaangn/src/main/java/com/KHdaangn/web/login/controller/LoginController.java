@@ -4,6 +4,8 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.servlet.http.HttpSession;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -42,4 +44,14 @@ public class LoginController {
 		return "login/join";
 	}
 	
+	// 로그아웃
+		@RequestMapping(value="/logout", method=RequestMethod.GET)
+		public String logout(HttpSession session) {
+			if(session.getAttribute("loginData") != null) {
+				// 기존 세션은 유지한 상태에서 로그인 정보만 제거하여 로그아웃 시킨다.
+				session.removeAttribute("loginData");
+			}
+			
+			return "redirect:/KHdaangn";
+		}
 }
