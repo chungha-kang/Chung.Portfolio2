@@ -7,14 +7,13 @@
 	<div class="footer-section">
 		<div class="footer-section-left">
 			<ul>
-				<c:url var="hotArticles" value="/hot_articles"></c:url>
 				<li><a href="${hotArticles}">중고거래</a>
 				<li><a href="">동네가게</a>
-				<li><a href="">당근알바</a>
+				<li><a href="${jobs}">당근알바</a>
 			</ul>
 			<ul>
 				<li><a href="">당근비즈니스</a>
-				<li><a href="">채팅하기</a>
+				<li><a href="${chat}">채팅하기</a>
 			</ul>
 			<ul>
 				<li><a href="">자주 묻는 질문</a>
@@ -36,20 +35,20 @@
 			프로젝트 진행기간 : 2022. 11. 08 ~ 2022. 12. 09
 		</div>
 		<div class="footer-info-right">
-			<a href="https://www.facebook.com/" target="_blank">facebook</a>
-			<a href="https://www.instagram.com/" target="_blank">instagram</a>
-			<a href="https://www.youtube.com/" target="_blank">youtube</a>
-			<a href="https://blog.naver.com/" target="_blank">blog</a>
-			<div>
-				<label class="">
-					<select id="label-select-nation" class="">
-						<option value="kr" selected>한국어</option>
-						<option value="none">none</option>
-						<option value="none">none</option>
-						<option value="none">none</option>
-						<option value="none">none</option>
-					</select>
-				</label>
+			<div class="footer-a">
+				<a href="https://www.facebook.com/" target="_blank">facebook</a>
+				<a href="https://www.instagram.com/" target="_blank">instagram</a>
+				<a href="https://www.youtube.com/" target="_blank">youtube</a>
+				<a href="https://blog.naver.com/" target="_blank">blog</a>
+			</div>
+			<div class="footer-select">
+				<select id="label-select-nation" class="">
+					<option value="kr" selected>한국어</option>
+					<option value="none">none</option>
+					<option value="none">none</option>
+					<option value="none">none</option>
+					<option value="none">none</option>
+				</select>
 			</div>
 		</div>
 	</div>

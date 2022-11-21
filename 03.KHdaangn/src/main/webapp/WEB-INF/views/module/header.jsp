@@ -6,13 +6,13 @@
 <div class="header-wrap">
 		<div class="nav">
 			<div class="nav-logo">
-				<a href="/KHdaangn"><img src="${pageContext.request.contextPath}/resources/img/logo.png">KH당근마켓</a>
+				<a href="${main}"><img src="${pageContext.request.contextPath}/resources/img/logo.png">KH당근마켓</a>
 			</div> 
 			<div class="nav-main">
 				<ul class="nav-item">
-					<li><a href="/KHdaangn">중고거래</a></li>
-					<li><a href="/KHdaangn/jobs">알바</a></li>
-					<li><a href="/KHdaangn/realty">부동산 직거래</a></li>
+					<li><a href="${main}">중고거래</a></li>
+					<li><a href="${jobs}">알바</a></li>
+					<li><a href="${realty}">부동산 직거래</a></li>
 				</ul>
 			</div>
 			<div class="search-bar">
@@ -20,12 +20,12 @@
 			</div>
 			<div class="nav-btn">
 				<c:if test="${empty sessionScope.loginData}">
-					<button class="btn-chat" onclick="location.href='/KHdaangn/join'">회원가입</button>
-					<button class="btn-loging" onclick="location.href='/KHdaangn/login'">로그인</button>
+					<button class="btn-chat" onclick="location.href='${join}'">회원가입</button>
+					<button class="btn-loging" onclick="location.href='${login}'">로그인</button>
 				</c:if>
 				<c:if test="${not empty sessionScope.loginData}">
-					<button class="btn-chat">채팅하기</button>
-					<button class="btn-loging">로그아웃</button>
+					<button class="btn-chat" onclick="location.href='${chat}'">채팅하기</button>
+					<button class="btn-loging" onclick="location.href='${logout}'">로그아웃</button>
 				</c:if>
 			</div>
 		</div>

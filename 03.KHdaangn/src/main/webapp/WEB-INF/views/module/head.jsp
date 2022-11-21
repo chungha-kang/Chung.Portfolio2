@@ -9,3 +9,12 @@
 <link type="text/css" rel="stylesheet" href="${cssUrl}/common.css">
 <script type="text/javascript" src="${JS}/common.js"></script>
 <script type="text/javascript" src="${jQuery}/jquery-3.6.0.min.js"></script>
+
+<c:url var="main" value="/" />
+<c:url var="jobs" value="/jobs" />
+<c:url var="realty" value="/realty" />
+<c:url var="join" value="/join" />
+<c:url var="login" value="/login" />
+<c:url var="chat" value="/chat" />
+<c:url var="logout" value="/logout" />
+<c:url var="hotArticles" value="/hot_articles" />
