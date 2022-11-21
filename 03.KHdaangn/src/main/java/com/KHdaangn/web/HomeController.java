@@ -28,4 +28,16 @@ public class HomeController {
 		return "index";
 	}
 	
+	@RequestMapping(value = "/hot_articles", method = RequestMethod.GET)
+	public String hotArticles(Locale locale, Model model) {
+		logger.info("hotArticles", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		String formattedDate = dateFormat.format(date);
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "hot_articles";
+	}
+	
 }
