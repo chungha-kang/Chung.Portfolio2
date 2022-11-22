@@ -66,7 +66,6 @@
 	<!-- Main -->
 	<div class="main-wrap">
 		<div class="main-title"><h1>중고거래 인기매물</h1></div>
-		<!-- 다중 셀렉트 박스 구현예정 (JS) -->
 		<div class="selector1">
 			<label for="province"></label>
 			<select id="province" name="province" onchange="adressSelect(this)">
