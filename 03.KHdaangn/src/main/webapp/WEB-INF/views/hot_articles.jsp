@@ -67,13 +67,13 @@
 	<div class="main-wrap">
 		<div class="main-title"><h1>중고거래 인기매물</h1></div>
 		<c:if test="${empty sessionScope.loginData}">
-			<!-- 로그인 구현 후 not empty 로 변경 하시오. -->
-			<%--c:if test="${not empty sessionScope.loginData}" --%>
-				<div class="post-btn">
-					<c:url var="realtyAddUrl" value="realty/add"/>
-					<button class="" onclick="location.href='${realtyAddUrl}'">글쓰기</button>
-				</div>
-			</c:if>
+		<!-- 로그인 구현 후 not empty 로 변경 하시오. -->
+		<%--c:if test="${not empty sessionScope.loginData}" --%>
+			<div class="post-btn">
+				<c:url var="articlesAddUrl" value="articles/add"/>
+				<button class="" onclick="location.href='${articlesAddUrl}'">글쓰기</button>
+			</div>
+		</c:if>
 		<div class="selector1">
 			<label for="province"></label>
 			<select id="province" name="province" onchange="adressSelect(this)">
