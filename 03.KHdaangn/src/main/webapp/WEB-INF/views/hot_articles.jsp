@@ -61,6 +61,7 @@
 		</div>
 		
 		<div class="article-wrap">
+			<%-- 
 			<div class="article-posts">
 				<c:forEach items="${articlesList}" var="articlesList">
 					<div class="post">
@@ -81,7 +82,7 @@
 					</div>
 				</c:forEach>
 			</div>
-			
+			 --%>
 			<!-- forEach jobsList 구현후 삭제 -->
 			<div class="article-posts">
 				<div class="post">
@@ -100,36 +101,118 @@
 						<!-- //Post -->
 					</form>
 				</div>
-			</div>
-			
-			
-			<div class="article-posts">
-				<a href="${articles}" class="">
-					<article>
-						<div class="article-img"><img alt="" src="${img}/article-img.JPG"></div>
-						<div class="atticle-content">
-							<div class="article-title">삼성 55인치 tv</div>
-							<div class="article-amount">100,000원</div>
-							<div class="article-address">부산 남구 문현제2동</div>
-							<div class="article-like">관심 40</div>
-							<div class="article-chat">채팅 79</div>
+				<div class="post">
+					<form action="${articlePostsUrl}" method="get">
+						<!-- Post (클릭되는 부분) -->
+						<div class="article-click" onclick="location.href='${articles}'">
+							<img class="article-img" src="${img}/article-img.JPG">
+							<div class="atticle-content">
+								<div class="article-title">삼성 55인치 tv</div>
+								<div class="article-amount">100,000원</div>
+								<div class="article-address">부산 남구 문현제2동</div>
+								<div class="article-like">관심 40</div>
+								<div class="article-chat">채팅 79</div>
+							</div>
 						</div>
-					</article>
-				</a>
-			</div>
-			<div class="article-posts">
-				<a href="${articles}" class="">
-					<article>
-						<div class="article-img"><img alt="" src="${img}/article-img.JPG"></div>
-						<div class="atticle-content">
-							<div class="article-title">삼성 55인치 tv</div>
-							<div class="article-amount">100,000원</div>
-							<div class="article-address">부산 남구 문현제2동</div>
-							<div class="article-like">관심 40</div>
-							<div class="article-chat">채팅 79</div>
+						<!-- //Post -->
+					</form>
+				</div>
+				<div class="post">
+					<form action="${articlePostsUrl}" method="get">
+						<!-- Post (클릭되는 부분) -->
+						<div class="article-click" onclick="location.href='${articles}'">
+							<img class="article-img" src="${img}/article-img.JPG">
+							<div class="atticle-content">
+								<div class="article-title">삼성 55인치 tv</div>
+								<div class="article-amount">100,000원</div>
+								<div class="article-address">부산 남구 문현제2동</div>
+								<div class="article-like">관심 40</div>
+								<div class="article-chat">채팅 79</div>
+							</div>
 						</div>
-					</article>
-				</a>
+						<!-- //Post -->
+					</form>
+				</div>
+				<div class="post">
+					<form action="${articlePostsUrl}" method="get">
+						<!-- Post (클릭되는 부분) -->
+						<div class="article-click" onclick="location.href='${articles}'">
+							<img class="article-img" src="${img}/article-img.JPG">
+							<div class="atticle-content">
+								<div class="article-title">삼성 55인치 tv</div>
+								<div class="article-amount">100,000원</div>
+								<div class="article-address">부산 남구 문현제2동</div>
+								<div class="article-like">관심 40</div>
+								<div class="article-chat">채팅 79</div>
+							</div>
+						</div>
+						<!-- //Post -->
+					</form>
+				</div>
+				<div class="post">
+					<form action="${articlePostsUrl}" method="get">
+						<!-- Post (클릭되는 부분) -->
+						<div class="article-click" onclick="location.href='${articles}'">
+							<img class="article-img" src="${img}/article-img.JPG">
+							<div class="atticle-content">
+								<div class="article-title">삼성 55인치 tv</div>
+								<div class="article-amount">100,000원</div>
+								<div class="article-address">부산 남구 문현제2동</div>
+								<div class="article-like">관심 40</div>
+								<div class="article-chat">채팅 79</div>
+							</div>
+						</div>
+						<!-- //Post -->
+					</form>
+				</div>
+				<div class="post">
+					<form action="${articlePostsUrl}" method="get">
+						<!-- Post (클릭되는 부분) -->
+						<div class="article-click" onclick="location.href='${articles}'">
+							<img class="article-img" src="${img}/article-img.JPG">
+							<div class="atticle-content">
+								<div class="article-title">삼성 55인치 tv</div>
+								<div class="article-amount">100,000원</div>
+								<div class="article-address">부산 남구 문현제2동</div>
+								<div class="article-like">관심 40</div>
+								<div class="article-chat">채팅 79</div>
+							</div>
+						</div>
+						<!-- //Post -->
+					</form>
+				</div>
+				<div class="post">
+					<form action="${articlePostsUrl}" method="get">
+						<!-- Post (클릭되는 부분) -->
+						<div class="article-click" onclick="location.href='${articles}'">
+							<img class="article-img" src="${img}/article-img.JPG">
+							<div class="atticle-content">
+								<div class="article-title">삼성 55인치 tv</div>
+								<div class="article-amount">100,000원</div>
+								<div class="article-address">부산 남구 문현제2동</div>
+								<div class="article-like">관심 40</div>
+								<div class="article-chat">채팅 79</div>
+							</div>
+						</div>
+						<!-- //Post -->
+					</form>
+				</div>
+				<div class="post">
+					<form action="${articlePostsUrl}" method="get">
+						<!-- Post (클릭되는 부분) -->
+						<div class="article-click" onclick="location.href='${articles}'">
+							<img class="article-img" src="${img}/article-img.JPG">
+							<div class="atticle-content">
+								<div class="article-title">삼성 55인치 tv</div>
+								<div class="article-amount">100,000원</div>
+								<div class="article-address">부산 남구 문현제2동</div>
+								<div class="article-like">관심 40</div>
+								<div class="article-chat">채팅 79</div>
+							</div>
+						</div>
+						<!-- //Post -->
+					</form>
+				</div>
 			</div>
 			<!-- //forEach jobsList 구현후 삭제 -->
 		</div>

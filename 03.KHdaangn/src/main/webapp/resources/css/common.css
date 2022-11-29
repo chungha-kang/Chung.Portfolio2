@@ -39,7 +39,8 @@ address, table, thead, tbody, tfoot, tr, td, caption {margin: 0; padding: 0;}
 .footer-info .footer-select {margin-left: 10px;}
 
 /* index */
-.main-wrap {width: 980px; margin: 7.3rem auto 0; align-items: center;}
+.main-wrap {margin: 7.3rem auto 0; align-items: center;}
+.main-wrap .main-title {width: 980px; margin: 0 auto;}
 .main-wrap .main-title > h1 {font-size: 34px; font-weight: 800; text-align: center; margin-bottom: 40px;}
 .main-wrap .main-content:first-child {position: relative; display: flex; padding-top: 24px; background-color: #FBF7F2;}
 .main-wrap .main-content:nth-child(2) {display: flex; padding: 6rem 0;}
@@ -64,11 +65,15 @@ address, table, thead, tbody, tfoot, tr, td, caption {margin: 0; padding: 0;}
 }
 
 /* hot_articles */
-.article-wrap {}
-.article-posts {}
-
-.main-wrap .article-top {width: 980px; display: flex;}
+.main-wrap .article-top {width: 980px; margin: 1rem auto; display: flex; justify-content: space-between; align-items: center;}
 .main-wrap .selector {float: right; display: flex;}
+
+.article-wrap .article-posts {width: 980px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
+.article-posts .post {width: calc(25% - 44px); margin-right: 44px; margin-bottom: 56px; cursor: pointer;}
+.article-click .article-img {width: 100%; border-radius: 12px;}
+
+.article-bottom {padding: 80px 0; text-align: center; background-color: #f8f9fa;} 
+ 
  
 /* posts */
 .posts {display:flex; justify-content: space-between;}
