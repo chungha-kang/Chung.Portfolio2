@@ -1,57 +1,67 @@
 package com.KHdaangn.web.jobs.model;
 
+import java.util.Date;
+
+import com.KHdaangn.web.jobsUpload.model.FileUploadDTO;
+
 public class JobsDTO {
 	
 	public JobsDTO() {}
 	
-	public JobsDTO(int id) {
-		this.id = id;
+	public JobsDTO(String jobBId) {
+		this.jobBId = jobBId;
+	}
+	
+	private String jobBId;
+	private String userId;
+	private Date postDate;
+	private JobsDetailDTO detailObj;
+	private FileUploadDTO imgObj;
+
+	public String getJobBId() {
+		return jobBId;
 	}
 
-	private String title;
-	private String id;
-	private String address;
-	private String ammount;
-	private String imjObj;
+	public void setJobBId(String jobBId) {
+		this.jobBId = jobBId;
+	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public Date getPostDate() {
+		return postDate;
+	}
+
+	public void setPostDate(Date postDate) {
+		this.postDate = postDate;
+	}
+
+	public JobsDetailDTO getDetailObj() {
+		return detailObj;
+	}
+
+	public void setDetailObj(JobsDetailDTO detailObj) {
+		this.detailObj = detailObj;
+	}
 	
-	public JobsDTO(String string, String string2, String string3, String string4) {
+	public FileUploadDTO getImgObj() {
+		return imgObj;
 	}
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	public String getAmmount() {
-		return ammount;
-	}
-	public void setAmmount(String ammount) {
-		this.ammount = ammount;
-	}
-	public String getImjObj() {
-		return imjObj;
-	}
-	public void setImjObj(String imjObj) {
-		this.imjObj = imjObj;
+
+	public void setImgObj(FileUploadDTO imgObj) {
+		this.imgObj = imgObj;
 	}
 	
 	@Override
 	public String toString() {
-		return "JobsDTO [title=" + title + ", id=" + id + ", address=" + address + ", ammount=" + ammount + ", imjObj="
-				+ imjObj + "]";
+		return "JobsDTO [jobBId=" + jobBId + ", userId=" + userId + ", postDate=" + postDate + ", imgObj=" + imgObj
+				+ ", detailObj=" + detailObj + "]";
 	}
-	
 	
 }
